@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const app = express()
 app.use(express.json())
 const port = 3000
+//retirei username e senha do connect
 mongoose.connect('mongodb+srv://<username>:<password>@webappapi.ppbei.mongodb.net/?retryWrites=true&w=majority&appName=WebAppAPI');
 
 const Order = mongoose.model('Order', { 
